@@ -2,4 +2,4 @@
 ///
 /// Will be default `false` if in a `vm` or `browswer` environment.
 
-bool get isAnsiSupport => false;
+bool get isAnsiSupports => false;
