@@ -11,7 +11,7 @@ import 'package:chalk/src/utils/ansi_support_io.dart';
 /// ```
 ///   `\x1B[n` is an example of control sequence introducer.
 
-String Function(String) bold(dynamic start, dynamic end) {
+String Function(String) fontType(dynamic start, dynamic end) {
   return (x) => !isAnsiSupports ? x : '\x1B[${start}m$x\x1B[${end}m';
 }
 
