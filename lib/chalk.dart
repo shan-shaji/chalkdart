@@ -1,1 +1,1 @@
-// chalk dart
+export 'src/chalk.dart';
