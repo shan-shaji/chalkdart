@@ -7,13 +7,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be colored `red`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.red('text').bold()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.red().bold());
@@ -25,13 +25,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be colored `cyan`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.cyan('text').bold()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.cyan().italic());
@@ -43,13 +43,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be colored `yellow`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.yellow('text').bold()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.yellow().italic());
@@ -61,13 +61,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be colored `blue`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.blue('text').bold()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.blue().italic());
@@ -79,13 +79,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be colored `cyan`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.green('text').bold()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.green().italic());
@@ -97,13 +97,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be styled as `bold`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.bold('text').red()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.bold());
@@ -115,13 +115,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be styled as `italic`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.italic('text').red()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.italic());
@@ -133,13 +133,13 @@ extension ChalkChain on String {
   /// Format [string] with ANSI to be styled as `underLined`.
   /// Usage can be in two ways
   ///
-  /// 1) Create a chalk instance and chain multiple methods.
+  /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
   ///   String newString = ch.underLined('text').red()
   ///   ```
-  /// 2) Simply chain multiple methods to a string
+  /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
   ///   print(newString.underLined());
@@ -147,4 +147,42 @@ extension ChalkChain on String {
   ///
   /// Returns default [string] if ANSI is not supported.
   String underLine() => _ch.underLined(this);
+
+  /// Format [string] with ANSI to be styled as `strikeThrough`.
+  /// Usage can be in two ways
+  ///
+  /// 1. Create a chalk instance and chain multiple methods.
+  /// [newString] will get new styled value.
+  ///  ```dart
+  ///   Chalk ch = Chalk()
+  ///   String newString = ch.strikeThrough('text').red()
+  ///   ```
+  ///
+  /// 2. Simply chain multiple methods to a string
+  ///   ```dart
+  ///   String newString = 'Hello';
+  ///   print(newString.strikeThrough());
+  ///   ```
+  ///
+  /// Returns default [string] if ANSI is not supported.
+  String strikeThrough() => _ch.strikeThrough(this);
+
+  /// Format [string] with ANSI to be styled as `faint`.
+  /// Usage can be in two ways
+  ///
+  /// 1. Create a chalk instance and chain multiple methods.
+  /// [newString] will get new styled value.
+  ///  ```dart
+  ///   Chalk ch = Chalk()
+  ///   String newString = ch.faint('text').red()
+  ///   ```
+  ///
+  /// 2. Simply chain multiple methods to a string
+  ///   ```dart
+  ///   String newString = 'Hello';
+  ///   print(newString.faint());
+  ///   ```
+  ///
+  /// Returns default [string] if ANSI is not supported.
+  String faint() => _ch.faint(this);
 }
