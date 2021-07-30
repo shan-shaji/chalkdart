@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:chalk/chalk.dart' as chalk;
 
 void main(List<String> arguments) {

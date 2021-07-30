@@ -147,4 +147,23 @@ extension ChalkChain on String {
   ///
   /// Returns default [string] if ANSI is not supported.
   String underLine() => _ch.underLined(this);
+
+  /// Format [string] with ANSI to be styled as `strikeThrough`.
+  /// Usage can be in two ways
+  ///
+  /// 1) Create a chalk instance and chain multiple methods.
+  /// [newString] will get new styled value.
+  ///  ```dart
+  ///   Chalk ch = Chalk()
+  ///   String newString = ch.strikeThrough('text').red()
+  ///   ```
+  ///
+  /// 2) Simply chain multiple methods to a string
+  ///   ```dart
+  ///   String newString = 'Hello';
+  ///   print(newString.strikeThrough());
+  ///   ```
+  ///
+  /// Returns default [string] if ANSI is not supported.
+  String strikeThrough() => _ch.strikeThrough(this);
 }
