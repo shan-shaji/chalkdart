@@ -12,7 +12,6 @@
 - Clean and focused
 
 ## Install
----
 
 With dart:
 
