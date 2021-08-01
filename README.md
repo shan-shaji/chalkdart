@@ -29,13 +29,16 @@ Chalk comes with an easy to use API where you just chain the styles you want.
   Chalk ch = Chalk();
   print(ch.bold('This is awesome').blue());
 
+  // Specify font face by using [ftFace] property
   print(ch.blue('blue text', ftFace: ChalkFtFace.italic));
-  print(ch.red('red Text', ftFace: chalk.ChalkFtFace.bold));
+  print(ch.red('red Text', ftFace: ChalkFtFace.bold));
 
+  // Chain styles
   print(ch.faint('faint text').blue());
   print(ch.cyan('cyan').bold());
 
-  print('chain text'.blue() + '' + 'chain text2'.red());
+  // Combine styled and normal strings
+  print('chain text'.blue() + ' world ' + 'chain text2'.red());
 ```
 
 
