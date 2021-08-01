@@ -1,3 +1,5 @@
+## 1.0.1
+- Initial Release
 ## 1.0.1-dev.1
 -  Doc Changes
 ## 1.0.0-dev.2

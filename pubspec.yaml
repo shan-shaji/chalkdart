@@ -1,6 +1,6 @@
 name: chalk
 description: Chalk helps to style your terminal strings
-version: 1.0.1-dev.1
+version: 1.0.1
 homepage: https://github.com/shan-shaji/chalkdart
 
 environment:
