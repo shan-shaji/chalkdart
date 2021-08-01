@@ -1,5 +1,5 @@
-import 'package:chalk/src/utils/ansi_support_io.dart'
-    if (dart.library.io) 'package:chalk/src/utils/ansi_support.dart';
+import 'package:chalk/src/utils/ansi_support.dart'
+    if (dart.library.io) 'package:chalk/src/utils/ansi_support_io.dart';
 
 /// This `closure function` Formats the string if [isAnsiSupport] is `true`
 ///

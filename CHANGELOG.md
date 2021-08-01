@@ -1,3 +1,7 @@
+## 1.0.3
+- Bug Fix
+## 1.0.2
+- Doc Update
 ## 1.0.1
 - Initial Release
 ## 1.0.1-dev.1
