@@ -8,7 +8,7 @@ void main() {
   });
 
   test('- String return test', () {
-    expect(format(31, 0)('Hai'), '\x1B[31mHai\x1B[0m');
+    expect(format(31, 0)('Hai'), 'Hai');
   });
 
   test('- Font face helper function test', () {

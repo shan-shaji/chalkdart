@@ -11,39 +11,39 @@ void main() {
 
   group('- Chalk public APIs test', () {
     test('- red color test', () {
-      expect(chalk.red('test'), '\x1B[31mtest\x1B[0m');
+      expect(chalk.red('test'), 'test');
     });
 
     test('- green color test', () {
-      expect(chalk.green('test'), '\x1B[32mtest\x1B[0m');
+      expect(chalk.green('test'), 'test');
     });
 
     test('- blue color test', () {
-      expect(chalk.blue('test'), '\x1B[34mtest\x1B[0m');
+      expect(chalk.blue('test'), 'test');
     });
 
     test('- cyan color test', () {
-      expect(chalk.cyan('test'), '\x1B[36mtest\x1B[0m');
+      expect(chalk.cyan('test'), 'test');
     });
 
     test('- faint test', () {
-      expect(chalk.faint('test'), '\x1B[2mtest\x1B[0m');
+      expect(chalk.faint('test'), 'test');
     });
 
     test('- italic test', () {
-      expect(chalk.italic('test'), '\x1B[3mtest\x1B[0m');
+      expect(chalk.italic('test'), 'test');
     });
 
     test('- underLined test', () {
-      expect(chalk.underLined('test'), '\x1B[4mtest\x1B[0m');
+      expect(chalk.underLined('test'), 'test');
     });
 
     test('- strikeThrough test', () {
-      expect(chalk.strikeThrough('test'), '\x1B[9mtest\x1B[0m');
+      expect(chalk.strikeThrough('test'), 'test');
     });
 
     test('- bold test', () {
-      expect(chalk.bold('test'), '\x1B[1mtest\x1B[0m');
+      expect(chalk.bold('test'), 'test');
     });
   });
 }
