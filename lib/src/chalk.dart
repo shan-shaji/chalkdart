@@ -1,6 +1,5 @@
 import 'package:chalk/src/enum/enums.dart';
 import 'package:chalk/src/helpers/helpers.dart' as _h;
-import 'package:meta/meta.dart';
 
 class Chalk {
   /// Format [string] with ANSI to be styled as `red`.
