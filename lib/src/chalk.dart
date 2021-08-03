@@ -24,7 +24,7 @@ class Chalk {
   ///   ```
   /// Returns default [string] if ANSI is not supported.
   String red(String txt, {ChalkFtFace? ftFace}) {
-    if (ftFace != null) txt = _applyFontFace(txt, ftFace);
+    if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
     txt = _h.format(31, 0)(txt);
     return txt;
   }
@@ -51,7 +51,7 @@ class Chalk {
   ///   ```
   /// Returns default [string] if ANSI is not supported.
   String green(String txt, {ChalkFtFace? ftFace}) {
-    if (ftFace != null) txt = _applyFontFace(txt, ftFace);
+    if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
     txt = _h.format(32, 0)(txt);
     return txt;
   }
@@ -78,7 +78,7 @@ class Chalk {
   ///   ```
   /// Returns default [string] if ANSI is not supported.
   String yellow(String txt, {ChalkFtFace? ftFace}) {
-    if (ftFace != null) txt = _applyFontFace(txt, ftFace);
+    if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
     txt = _h.format(33, 0)(txt);
     return txt;
   }
@@ -105,7 +105,7 @@ class Chalk {
   ///   ```
   /// Returns default [string] if ANSI is not supported.
   String blue(String txt, {ChalkFtFace? ftFace}) {
-    if (ftFace != null) txt = _applyFontFace(txt, ftFace);
+    if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
     txt = _h.format(34, 0)(txt);
     return txt;
   }
@@ -132,7 +132,7 @@ class Chalk {
   ///   ```
   /// Returns default [string] if ANSI is not supported.
   String cyan(String txt, {ChalkFtFace? ftFace}) {
-    if (ftFace != null) txt = _applyFontFace(txt, ftFace);
+    if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
     txt = _h.format(36, 0)(txt);
     return txt;
   }
@@ -242,18 +242,5 @@ class Chalk {
   String bold(String txt) {
     txt = _h.format(1, 0)(txt);
     return txt;
-  }
-
-  String _applyFontFace(String txt, ChalkFtFace ftFace) {
-    switch (ftFace) {
-      case ChalkFtFace.bold:
-        return bold(txt);
-      case ChalkFtFace.italic:
-        return italic(txt);
-      case ChalkFtFace.underLined:
-        return underLined(txt);
-      case ChalkFtFace.strikeThrough:
-        return strikeThrough(txt);
-    }
   }
 }
