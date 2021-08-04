@@ -3,6 +3,8 @@
 	<p align="center"><b>Style your terminal strings🎨</b>  </p>
 </p>
 
+[![Build Status](https://www.travis-ci.com/shan-shaji/chalkdart.svg?branch=main)](https://www.travis-ci.com/shan-shaji/chalkdart)
+
 ---
 ## Highlights
 
