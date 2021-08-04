@@ -1,7 +1,9 @@
 import 'package:chalk/src/enum/enums.dart';
-import 'package:chalk/src/helpers/helpers.dart' as _h;
+import 'package:chalk/src/helpers/helpers.dart';
 
 class Chalk {
+  final Helper _h = Helper();
+
   /// Format [string] with ANSI to be styled as `red`.
   ///
   /// Usage can be in 3 ways
@@ -25,7 +27,7 @@ class Chalk {
   /// Returns default [string] if ANSI is not supported.
   String red(String txt, {ChalkFtFace? ftFace}) {
     if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
-    txt = _h.format(31, 0)(txt);
+    txt = _h.format(31)(txt);
     return txt;
   }
 
@@ -52,7 +54,7 @@ class Chalk {
   /// Returns default [string] if ANSI is not supported.
   String green(String txt, {ChalkFtFace? ftFace}) {
     if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
-    txt = _h.format(32, 0)(txt);
+    txt = _h.format(32)(txt);
     return txt;
   }
 
@@ -79,7 +81,7 @@ class Chalk {
   /// Returns default [string] if ANSI is not supported.
   String yellow(String txt, {ChalkFtFace? ftFace}) {
     if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
-    txt = _h.format(33, 0)(txt);
+    txt = _h.format(33)(txt);
     return txt;
   }
 
@@ -106,7 +108,7 @@ class Chalk {
   /// Returns default [string] if ANSI is not supported.
   String blue(String txt, {ChalkFtFace? ftFace}) {
     if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
-    txt = _h.format(34, 0)(txt);
+    txt = _h.format(34)(txt);
     return txt;
   }
 
@@ -133,7 +135,7 @@ class Chalk {
   /// Returns default [string] if ANSI is not supported.
   String cyan(String txt, {ChalkFtFace? ftFace}) {
     if (ftFace != null) txt = _h.applyFontFace(txt, ftFace);
-    txt = _h.format(36, 0)(txt);
+    txt = _h.format(36)(txt);
     return txt;
   }
 
@@ -155,7 +157,7 @@ class Chalk {
   ///
   /// Returns default [string] if ANSI is not supported.
   String faint(String txt) {
-    txt = _h.format(2, 0)(txt);
+    txt = _h.format(2)(txt);
     return txt;
   }
 
@@ -176,7 +178,7 @@ class Chalk {
   ///
   /// Returns default [string] if ANSI is not supported.
   String italic(String txt) {
-    txt = _h.format(3, 0)(txt);
+    txt = _h.format(3)(txt);
     return txt;
   }
 
@@ -197,7 +199,7 @@ class Chalk {
   ///
   /// Returns default [string] if ANSI is not supported.
   String underLined(String txt) {
-    txt = _h.format(4, 0)(txt);
+    txt = _h.format(4)(txt);
     return txt;
   }
 
@@ -219,7 +221,7 @@ class Chalk {
   ///
   /// Returns default [string] if ANSI is not supported.
   String strikeThrough(String txt) {
-    txt = _h.format(9, 0)(txt);
+    txt = _h.format(9)(txt);
     return txt;
   }
 
@@ -240,7 +242,7 @@ class Chalk {
   ///
   /// Returns default [string] if ANSI is not supported.
   String bold(String txt) {
-    txt = _h.format(1, 0)(txt);
+    txt = _h.format(1)(txt);
     return txt;
   }
 }
