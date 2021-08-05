@@ -12,10 +12,30 @@ void main() {
     expect(h.format(31)('Hai'), '\x1B[31mHai\x1B[0m');
   });
 
-  test('- Font face helper function test', () {
-    expect(h.applyFontFace('test', ChalkFtFace.bold), isA<String>());
-    expect(h.applyFontFace('test', ChalkFtFace.italic), isA<String>());
-    expect(h.applyFontFace('test', ChalkFtFace.strikeThrough), isA<String>());
-    expect(h.applyFontFace('test', ChalkFtFace.underLined), isA<String>());
+  group('- Font face helper function test', () {
+    test('- Bold font face test', () {
+      expect(
+        h.applyFontFace('test', ChalkFtFace.bold),
+        '\x1B[1mtest\x1B[0m',
+      );
+    });
+
+    test('- italic font face test', () {
+      expect(
+        h.applyFontFace('test', ChalkFtFace.italic),
+        '\x1B[3mtest\x1B[0m',
+      );
+    });
+    test('- underLined font face test', () {
+      expect(
+        h.applyFontFace('test', ChalkFtFace.underLined),
+        '\x1B[4mtest\x1B[0m',
+      );
+    });
+
+    test('- underLined font face test', () {
+      expect(h.applyFontFace('test', ChalkFtFace.strikeThrough),
+          '\x1B[9mtest\x1B[0m');
+    });
   });
 }
