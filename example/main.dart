@@ -2,8 +2,8 @@ import 'package:chalk/chalk.dart';
 
 void main() {
   var ch = Chalk();
-  var ch = Chalk();
 
+  print('/n');
   // Specify font face by using [ftFace] property
   print(ch.blue('blue text', ftFace: ChalkFtFace.italic));
   print(ch.red('red Text', ftFace: ChalkFtFace.bold));
