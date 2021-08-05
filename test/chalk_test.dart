@@ -14,7 +14,7 @@ void main() {
   group('- Chalk public APIs test', () {
     test('- red color test', () {
       var h = chalk.red('test');
-      expect(h, '\x1B[33mtest\x1B[0m');
+      expect(h, '\x1B[31mtest\x1B[0m');
     });
 
     test('- green color test', () {
