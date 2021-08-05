@@ -6,6 +6,7 @@
 [![Build Status](https://www.travis-ci.com/shan-shaji/chalkdart.svg?branch=main)](https://www.travis-ci.com/shan-shaji/chalkdart)
 
 <img src='https://raw.githubusercontent.com/shan-shaji/chalkdart/main/screenshot.PNG'>
+
 ---
 ## Highlights
 
