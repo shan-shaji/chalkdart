@@ -30,8 +30,7 @@ $ flutter pub add chalk
 Chalk comes with an easy to use API where you just chain the styles you want.
 
 ```dart
-  Chalk ch = Chalk();
-  print(ch.bold('This is awesome').blue());
+  var ch = Chalk();
 
   // Specify font face by using [ftFace] property
   print(ch.blue('blue text', ftFace: ChalkFtFace.italic));
@@ -41,8 +40,13 @@ Chalk comes with an easy to use API where you just chain the styles you want.
   print(ch.faint('faint text').blue());
   print(ch.cyan('cyan').bold());
 
+  // Not widely supported
+  print(ch.yellow('yellow').underLined());
+  print(ch.yellow('yellow').strikeThrough());
+
   // Combine styled and normal strings
-  print('chain text'.blue() + ' world ' + 'chain text2'.red());
+  print('chain text'.green() + ' Normal Text ' + 'chain text2'.red());
+  print('\n');
 ```
 
 
