@@ -146,7 +146,7 @@ extension ChalkChain on String {
   ///   ```
   ///
   /// Returns default [string] if ANSI is not supported.
-  String underLine() => _ch.underLined(this);
+  String underLined() => _ch.underLined(this);
 
   /// Format [string] with ANSI to be styled as `strikeThrough`.
   /// Usage can be in two ways

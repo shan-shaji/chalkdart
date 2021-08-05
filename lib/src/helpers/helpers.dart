@@ -18,6 +18,10 @@ class Helper {
     return (x) => !isAnsiSupports ? x : '\x1B[${start}m$x\x1B[0m';
   }
 
+  String Function(String) formatFace(dynamic start, dynamic end) {
+    return (x) => !isAnsiSupports ? x : '\x1B[$start;${end}m$x\x1B[0m';
+  }
+
   String applyFontFace(String txt, ChalkFtFace ftFace) {
     switch (ftFace) {
       case ChalkFtFace.bold:
