@@ -1,3 +1,7 @@
+## 1.0.4
+- Bug Fix
+- Doc Update
+- `underline` and `strikeThrough` are not widely supported
 ## 1.0.3
 - Bug Fix
 ## 1.0.2
