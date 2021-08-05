@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:chalk/chalk.dart';
-import 'package:chalk/src/helpers/ansi-codes.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
@@ -15,7 +14,7 @@ void main() {
   group('- Chalk public APIs test', () {
     test('- red color test', () {
       var h = chalk.red('test');
-      expect(RESET, '\033[0m');
+      expect(h, '\x1B[33mtest\x1B[0m');
     });
 
     test('- green color test', () {
