@@ -3,6 +3,11 @@
 	<p align="center"><b>Style your terminal strings🎨</b>  </p>
 </p>
 
+
+This is a feature clone of the awesome [Chalk](https://github.com/chalk/chalk) (JavaScript) library.
+
+All credits go to [Sindre Sorhus](https://github.com/sindresorhus).
+
 [![Build Status](https://www.travis-ci.com/shan-shaji/chalkdart.svg?branch=main)](https://www.travis-ci.com/shan-shaji/chalkdart)
 
 <img src='https://raw.githubusercontent.com/shan-shaji/chalkdart/main/screenshot.PNG'>

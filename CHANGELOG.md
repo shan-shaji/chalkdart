@@ -1,4 +1,4 @@
-## 1.0.4
+## git 
 - Bug Fix
 - Doc Update
 - `underline` and `strikeThrough` are not widely supported
