@@ -11,3 +11,20 @@ enum ChalkFtFace {
   underLined,
   strikeThrough,
 }
+
+enum ColorMode {
+  allOf,
+  basic16,
+  extended256,
+  fullTrueColor,
+}
+
+class Codes {
+  String? on;
+  String? off;
+
+  Codes({
+    this.on,
+    this.off,
+  });
+}
