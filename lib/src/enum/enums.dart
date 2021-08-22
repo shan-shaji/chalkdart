@@ -8,6 +8,7 @@
 enum ChalkFtFace {
   bold,
   italic,
-  underLined,
+  underLine,
   strikeThrough,
+  overline,
 }

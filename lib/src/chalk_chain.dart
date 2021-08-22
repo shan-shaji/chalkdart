@@ -1,4 +1,4 @@
-import 'package:chalk/src/chalk.dart';
+import '../chalk.dart';
 
 extension ChalkChain on String {
   /// creates [Chalk] instance so that the same  chalk APIs can be used while chaining.
@@ -94,6 +94,42 @@ extension ChalkChain on String {
   /// Returns default [string] if ANSI is not supported.
   String green() => _ch.green(this);
 
+  /// Format [string] with ANSI to be colored `magenta`.
+  /// Usage can be in two ways
+  ///
+  /// 1. Create a chalk instance and chain multiple methods.
+  /// [newString] will get new styled value.
+  ///  ```dart
+  ///   Chalk ch = Chalk()
+  ///   String newString = ch.magenta('text').bold()
+  ///   ```
+  /// 2. Simply chain multiple methods to a string
+  ///   ```dart
+  ///   String newString = 'Hello';
+  ///   print(newString.magenta().italic());
+  ///   ```
+  ///
+  /// Returns default [string] if ANSI is not supported.
+  String magenta() => _ch.magenta(this);
+
+  /// Format [string] with ANSI to be colored `white`.
+  /// Usage can be in two ways
+  ///
+  /// 1. Create a chalk instance and chain multiple methods.
+  /// [newString] will get new styled value.
+  ///  ```dart
+  ///   Chalk ch = Chalk()
+  ///   String newString = ch.white('text').bold()
+  ///   ```
+  /// 2. Simply chain multiple methods to a string
+  ///   ```dart
+  ///   String newString = 'Hello';
+  ///   print(newString.white().italic());
+  ///   ```
+  ///
+  /// Returns default [string] if ANSI is not supported.
+  String white() => _ch.white(this);
+
   /// Format [string] with ANSI to be styled as `bold`.
   /// Usage can be in two ways
   ///
@@ -146,7 +182,7 @@ extension ChalkChain on String {
   ///   ```
   ///
   /// Returns default [string] if ANSI is not supported.
-  String underLined() => _ch.underLined(this);
+  String underLined() => _ch.underLine(this);
 
   /// Format [string] with ANSI to be styled as `strikeThrough`.
   /// Usage can be in two ways
