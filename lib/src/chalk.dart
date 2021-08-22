@@ -245,19 +245,19 @@ class Chalk {
     return txt;
   }
 
-  /// Format [string] with ANSI to be styled as `underLined`.
+  /// Format [string] with ANSI to be styled as `underLine`.
   /// Usage can be in two ways
   ///
   /// 1. Create a chalk instance and chain multiple methods.
   /// [newString] will get new styled value.
   ///  ```dart
   ///   Chalk ch = Chalk()
-  ///   String newString = ch.underLined('text').red()
+  ///   String newString = ch.underLine('text').red()
   ///   ```
   /// 2. Simply chain multiple methods to a string
   ///   ```dart
   ///   String newString = 'Hello';
-  ///   print(newString.underLined());
+  ///   print(newString.underLine());
   ///   ```
   ///
   /// Returns default [string] if ANSI is not supported.
@@ -339,7 +339,6 @@ class Chalk {
       Mod.overline,
       str: txt,
     );
-
     return txt;
   }
 }

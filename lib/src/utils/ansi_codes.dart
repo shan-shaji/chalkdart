@@ -81,36 +81,36 @@ class Color {
     off: COLOR_CLOSE,
   );
 
-  static Ansi16Code blackWite = Ansi16Code(
-    on: 30,
+  static Ansi16Code blacBright = Ansi16Code(
+    on: 90,
     off: COLOR_CLOSE,
   );
   static Ansi16Code redBright = Ansi16Code(
-    on: 30,
+    on: 91,
     off: COLOR_CLOSE,
   );
   static Ansi16Code greenBright = Ansi16Code(
-    on: 30,
+    on: 92,
     off: COLOR_CLOSE,
   );
   static Ansi16Code yellowBright = Ansi16Code(
-    on: 30,
+    on: 93,
     off: COLOR_CLOSE,
   );
   static Ansi16Code blueBright = Ansi16Code(
-    on: 30,
+    on: 94,
     off: COLOR_CLOSE,
   );
   static Ansi16Code magentaBright = Ansi16Code(
-    on: 30,
+    on: 95,
     off: COLOR_CLOSE,
   );
   static Ansi16Code cyanBright = Ansi16Code(
-    on: 30,
+    on: 96,
     off: COLOR_CLOSE,
   );
   static Ansi16Code whiteBright = Ansi16Code(
-    on: 30,
+    on: 97,
     off: COLOR_CLOSE,
   );
 
