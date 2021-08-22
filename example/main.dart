@@ -13,8 +13,9 @@ void main() {
   print(ch.cyan('cyan').bold());
 
   // Not widely supported
-  print(ch.yellow('yellow').underLined());
+  print(ch.yellow('yellow').underLine());
   print(ch.yellow('yellow').strikeThrough());
+  print(ch.bold('Hai').magenta());
 
   // Combine styled and normal strings
   print('chain text'.green() + ' Normal Text ' + 'chain text2'.red());

@@ -19,10 +19,4 @@ class Helper {
         ? x
         : '\u001b[' + on.toString() + 'm$x' + '\u001b[${off}m';
   }
-
-  String Function(String) formatFace(dynamic start, dynamic end) {
-    return (x) => !isAnsiSupports ? x : '\x1B[$start;${end}m$x\x1B[0m';
-  }
-
-  
 }

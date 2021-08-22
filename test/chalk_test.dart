@@ -1,52 +1,99 @@
-// import 'dart:developer';
+import 'dart:developer';
 
-// import 'package:chalk/chalk.dart';
-// import 'package:test/expect.dart';
-// import 'package:test/scaffolding.dart';
+import 'package:chalk/chalk.dart';
+import 'package:chalk/src/utils/ansi_codes.dart';
+import 'package:test/expect.dart';
+import 'package:test/scaffolding.dart';
 
-// void main() {
-//   late Chalk chalk;
+void main() {
+  late Chalk chalk;
 
-//   setUpAll(() {
-//     chalk = Chalk();
-//   });
+  setUpAll(() {
+    chalk = Chalk();
+  });
 
-//   group('- Chalk public APIs test', () {
-//     test('- red color test', () {
-//       var h = chalk.red('test');
-//       expect(h, '\x1B[31mtest\x1B[0m');
-//     });
+  group('- Chalk public APIs test', () {
+    test('- red color test', () {
+      var h = chalk.red('test');
+      expect(
+        h,
+        '\u001b[' +
+            Color.red.on.toString() +
+            'm$test' +
+            '\u001b[${Color.red.off.toString()}m',
+      );
+    });
 
-//     test('- green color test', () {
-//       expect(chalk.green('test'), '\x1B[32mtest\x1B[0m');
-//     });
+    test('- green color test', () {
+      expect(
+          chalk.green('test'),
+          '\u001b[' +
+              Color.green.on.toString() +
+              'm$test' +
+              '\u001b[${Color.green.off.toString()}m');
+    });
 
-//     test('- blue color test', () {
-//       expect(chalk.blue('test'), '\x1B[34mtest\x1B[0m');
-//     });
+    test('- blue color test', () {
+      expect(
+          chalk.blue('test'),
+          '\u001b[' +
+              Color.blue.on.toString() +
+              'm$test' +
+              '\u001b[${Color.blue.off.toString()}m');
+    });
 
-//     test('- cyan color test', () {
-//       expect(chalk.cyan('test'), '\x1B[36mtest\x1B[0m');
-//     });
+    test('- cyan color test', () {
+      expect(
+          chalk.cyan('test'),
+          '\u001b[' +
+              Color.cyan.on.toString() +
+              'm$test' +
+              '\u001b[${Color.cyan.off.toString()}m');
+    });
 
-//     test('- faint test', () {
-//       expect(chalk.faint('test'), '\x1B[2mtest\x1B[0m');
-//     });
+    test('- faint test', () {
+      expect(
+          chalk.faint('test'),
+          '\u001b[' +
+              Mod.dim.on.toString() +
+              'm$test' +
+              '\u001b[${Mod.dim.off.toString()}m');
+    });
 
-//     test('- italic test', () {
-//       expect(chalk.italic('test'), '\x1B[3mtest\x1B[0m');
-//     });
+    test('- italic test', () {
+      expect(
+          chalk.italic('test'),
+          '\u001b[' +
+              Mod.italic.on.toString() +
+              'm$test' +
+              '\u001b[${Mod.italic.off.toString()}m');
+    });
 
-//     test('- underLined test', () {
-//       expect(chalk.underLine('test'), '\x1B[4mtest\x1B[0m');
-//     });
+    test('- underLined test', () {
+      expect(
+          chalk.underLine('test'),
+          '\u001b[' +
+              Mod.underline.on.toString() +
+              'm$test' +
+              '\u001b[${Mod.underline.off.toString()}m');
+    });
 
-//     test('- strikeThrough test', () {
-//       expect(chalk.strikeThrough('test'), '\x1B[9mtest\x1B[0m');
-//     });
+    test('- strikeThrough test', () {
+      expect(
+          chalk.strikeThrough('test'),
+          '\u001b[' +
+              Mod.strikeThrough.on.toString() +
+              'm$test' +
+              '\u001b[${Mod.strikeThrough.off.toString()}m');
+    });
 
-//     test('- bold test', () {
-//       expect(chalk.bold('test'), '\x1B[1mtest\x1B[0m');
-//     });
-//   });
-// }
+    test('- bold test', () {
+      expect(
+          chalk.bold('test'),
+          '\u001b[' +
+              Mod.bold.on.toString() +
+              'm$test' +
+              '\u001b[${Mod.bold.off.toString()}m');
+    });
+  });
+}
