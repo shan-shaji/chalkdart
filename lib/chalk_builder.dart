@@ -3,7 +3,7 @@ import 'package:chalk/src/helpers/helpers.dart';
 import 'package:chalk/src/utils/ansi_codes.dart';
 
 class ChalkBuilder {
-  Helper _h = Helper();
+  final Helper _h = Helper();
 
   String style(Ansi16Code mode, {required str}) {
     return _h.format(on: mode.on, off: mode.off)(str);

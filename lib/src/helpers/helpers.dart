@@ -1,4 +1,3 @@
-import 'package:chalk/src/enum/enums.dart';
 import 'package:chalk/src/utils/ansi_support.dart'
     if (dart.library.io) 'package:chalk/src/utils/ansi_support_io.dart';
 
@@ -11,7 +10,7 @@ import 'package:chalk/src/utils/ansi_support.dart'
 ///   }
 ///
 /// ```
-///   `\x1B[n` is an example of control sequence introducer.
+///   `'\u001b` is an example of control sequence introducer.
 
 class Helper {
   String Function(String) format({required int on, required int off}) {

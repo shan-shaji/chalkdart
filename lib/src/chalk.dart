@@ -1,11 +1,10 @@
 import 'package:chalk/chalk.dart';
 import 'package:chalk/chalk_builder.dart';
 import 'package:chalk/src/enum/enums.dart';
-import 'package:chalk/src/helpers/helpers.dart';
 import 'package:chalk/src/utils/ansi_codes.dart';
 
 class Chalk {
-  ChalkBuilder _chalkBuilder = ChalkBuilder();
+  final ChalkBuilder _chalkBuilder = ChalkBuilder();
 
   /// Format [string] with ANSI to be styled as `red`.
   ///

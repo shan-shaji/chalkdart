@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:chalk/chalk.dart';
 import 'package:chalk/src/utils/ansi_codes.dart';
 import 'package:test/expect.dart';

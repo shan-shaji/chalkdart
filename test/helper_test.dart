@@ -1,41 +1,20 @@
-// import 'package:chalk/chalk.dart';
-// import 'package:chalk/src/helpers/helpers.dart';
-// import 'package:test/test.dart';
+import 'package:chalk/src/helpers/helpers.dart';
+import 'package:chalk/src/utils/ansi_codes.dart';
+import 'package:test/test.dart';
 
-// void main() {
-//   Helper h = Helper();
-//   test('- When called returns a function', () {
-//     expect(h.format(31), isA<Function>());
-//   });
+void main() {
+  var h = Helper();
+  test('- When called returns a function', () {
+    expect(h.format(off: 1, on: 0), isA<Function>());
+  });
 
-//   test('- String return test', () {
-//     expect(h.format(31)('Hai'), '\x1B[31mHai\x1B[0m');
-//   });
-
-//   group('- Font face helper function test', () {
-//     test('- Bold font face test', () {
-//       expect(
-//         h.applyFontFace('test', ChalkFtFace.bold),
-//         '\x1B[1mtest\x1B[0m',
-//       );
-//     });
-
-//     test('- italic font face test', () {
-//       expect(
-//         h.applyFontFace('test', ChalkFtFace.italic),
-//         '\x1B[3mtest\x1B[0m',
-//       );
-//     });
-//     test('- underLined font face test', () {
-//       expect(
-//         h.applyFontFace('test', ChalkFtFace.underLined),
-//         '\x1B[4mtest\x1B[0m',
-//       );
-//     });
-
-//     test('- underLined font face test', () {
-//       expect(h.applyFontFace('test', ChalkFtFace.strikeThrough),
-//           '\x1B[9mtest\x1B[0m');
-//     });
-//   });
-// }
+  test('- String return test', () {
+    expect(
+      h.format(
+        on: Mod.bold.on,
+        off: Mod.bold.off,
+      )('test'),
+      '\u001b[${Mod.bold.on.toString()}mtest\u001b[${Mod.bold.off.toString()}m',
+    );
+  });
+}
