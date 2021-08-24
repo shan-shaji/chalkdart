@@ -6,7 +6,7 @@ import 'package:chalk/src/utils/ansi_codes.dart';
 class Chalk {
   final ChalkBuilder _chalkBuilder = ChalkBuilder();
 
-  /// Format [string] with ANSI to be styled as `red`.
+    /// Format [string] with ANSI to be styled as `red`.
   ///
   /// Usage can be in 3 ways
   /// 1. Create a chalk instance and chain multiple methods.

@@ -1,3 +1,4 @@
+
 import 'package:chalk/chalk.dart' as chalk;
 import 'package:chalk/chalk.dart';
 
@@ -7,6 +8,8 @@ void main(List<String> arguments) {
   print('\n');
   print('-- VS Code Output --');
   print('\n');
+
+
 
   print(ch.bold('hello'));
   // Specify font face by using [ftFace] property
