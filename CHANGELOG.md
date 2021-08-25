@@ -1,4 +1,8 @@
-## git 
+## 1.1.5
+- Bug fix
+- Add new text colors
+
+## 1.0.4
 - Bug Fix
 - Doc Update
 - `underline` and `strikeThrough` are not widely supported
