@@ -1,3 +1,7 @@
+## 1.2.0
+- __Breaking__ feat: Exported public chalk instance.
+- Now `Chalk` instance can be accessed using the variable `chalk`.
+
 ## 1.1.5
 - Bug fix
 - Add new text colors

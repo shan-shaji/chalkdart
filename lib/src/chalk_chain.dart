@@ -1,4 +1,5 @@
-import '../chalk.dart';
+import 'package:chalk/src/chalk.dart';
+
 
 extension ChalkChain on String {
   /// creates [Chalk] instance so that the same  chalk APIs can be used while chaining.
