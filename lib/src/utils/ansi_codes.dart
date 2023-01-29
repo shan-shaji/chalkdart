@@ -61,7 +61,7 @@ class Color {
     off: COLOR_CLOSE,
   );
   static Ansi16Code yellow = Ansi16Code(
-    on: 333,
+    on: 33,
     off: COLOR_CLOSE,
   );
   static Ansi16Code blue = Ansi16Code(
