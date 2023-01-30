@@ -1,3 +1,6 @@
+## 1.2.1
+-  Fixed incorrect yellow ansi code 
+
 ## 1.2.0
 - __Breaking__ feat: Exported public chalk instance.
 - Now `Chalk` instance can be accessed using the variable `chalk`.
